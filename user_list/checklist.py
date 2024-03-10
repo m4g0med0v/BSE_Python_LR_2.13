@@ -2,7 +2,10 @@
 # -*- coding: utf-8 -*-
 
 def checklist_users(users):
-    line = '+-{}-+-{}-+-{}-+-{}-+'.format('-' * 4, '-' * 20, '-' * 18, '-' * 10)
+    line = '+-{}-+-{}-+-{}-+-{}-+'.format('-' * 4,
+                                          '-' * 20,
+                                          '-' * 18,
+                                          '-' * 10)
     print(line)
     print('| {:^4} | {:^20} | {:^18} | {:^10} |'.format(
         '№',
@@ -19,7 +22,6 @@ def checklist_users(users):
                 user['name'],
                 user['phone_number'],
                 ' '.join(map(str, user['year']))
-            ) 
+            )
         )
         print(line)
-            

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-def select_users(users):
+def choice_mounth(users):
     print('Введите число месяца (1 - 12): ')
     while True:
         num = int(input())
@@ -10,7 +10,10 @@ def select_users(users):
         else:
             break
 
-    line = '+-{}-+-{}-+-{}-+-{}-+'.format('-' * 4, '-' * 20, '-' * 18, '-' * 10)
+    line = '+-{}-+-{}-+-{}-+-{}-+'.format('-' * 4,
+                                          '-' * 20,
+                                          '-' * 18,
+                                          '-' * 10)
     print(line)
     print('| {:^4} | {:^20} | {:^18} | {:^10} |'.format(
         '№',
@@ -28,7 +31,6 @@ def select_users(users):
                     user['name'],
                     user['phone_number'],
                     ' '.join(map(str, user['year']))
-                ) 
+                )
             )
             print(line)
-            

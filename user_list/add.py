@@ -4,7 +4,8 @@
 def add_users(users):
     name = input('Введите Фамилию и Имя: ')
     phone_number = input('Введите Номер телефона: ')
-    year = list(map(int, input('Введите дату рождения (пример: 05 07 2004): ').split()))
+    year = list(map(int, input('Введите дату рождения'
+                               '(пример: 05 07 2004): ').split()))
 
     user = {
         'name': name,
@@ -16,5 +17,3 @@ def add_users(users):
 
     if len(users) > 1:
         users.sort(key=lambda item: item.get('name', ''))
-
-    
